@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { EuiProvider } from '@elastic/eui';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <EuiProvider colorMode="light">
+      <App />
+    </EuiProvider>
   </React.StrictMode>
 );
 
